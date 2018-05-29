@@ -1,0 +1,731 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="container-fluid form-field">
+    <div class="container-fluid spacing">
+            <div>
+                <form class="example-form">
+                        <table class="example-full-width" cellspacing="100">
+                            <tr>
+                                <td class="doc-Space">
+                                    <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Admission ID">
+                                    </mat-form-field></td>
+                                <td>
+                                    <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="MocDoc ID">
+                                    </mat-form-field>
+                                </td>
+                              </tr>
+                        </table>
+                </form>
+            <div>
+            
+            <div>
+                    <h5>STUDENT'S PERSONAL INFORMATION (To be filled in by patterns) </h5>
+
+                    <form class="example-form">
+                            <table class="example-full-width" cellspacing="100"><tr>
+                              <td class="doc-spacing">
+                              <mat-form-field class="example-full-width-school">
+                                <input matInput placeholder="Name of School">
+                              </mat-form-field></td>
+                              <td class="doc-spacing">
+                                <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Class / Sec">
+                              </mat-form-field></td>
+                              <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Age">
+                                  </mat-form-field></td>
+                            </tr></table>
+                            
+                            <table class="example-full-width" cellspacing="0"><tr>
+                                    <td><mat-form-field class="example-full-width">
+                                      <input matInput placeholder="FULL NAME(in capitals)">
+                                    </mat-form-field></td>
+                            </tr></table>
+
+                            <table class="example-full-width" cellspacing="100">
+                                <tr>
+                                    <td class="doc-spacing">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="DOB">
+                                    </mat-form-field></td>
+                                    <td class="doc-spacing">
+                                      <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Gender : M/F">
+                                    </mat-form-field></td>
+                                    <td class="doc-spacing">
+                                        <mat-form-field class="example-full-width">
+                                          <input matInput placeholder="Blood Group">
+                                        </mat-form-field></td>
+                                    <td><mat-form-field class="example-full-width">
+                                                <input matInput placeholder="Allergy">
+                                              </mat-form-field></td>
+                                </tr>
+                            </table>
+
+                            <table class="example-full-width" cellspacing="100">
+                                    <tr>
+                                        <td class="doc-spacing">
+                                        <mat-form-field class="example-full-width-school">
+                                          <input matInput placeholder="Parent's Name">
+                                        </mat-form-field></td>
+                                        <td class="doc-spacing">
+                                          <mat-form-field class="example-full-width-phone">
+                                          <input matInput placeholder="Mobile">
+                                        </mat-form-field></td>
+                                        <td class="doc-spacing">
+                                            <mat-form-field class="example-full-width-phone">
+                                              <input matInput placeholder="Email ID">
+                                            </mat-form-field></td>
+                                    </tr>
+                            </table>
+
+                            <p>
+                              <mat-form-field class="example-full-width">
+                                <textarea matInput placeholder="Address"></textarea>
+                              </mat-form-field>
+                            </p>
+                          
+                            <table class="example-full-width" cellspacing="0"><tr>
+                              <td class="doc-spacing">
+                                <mat-form-field class="example-full-width">
+                                <input matInput placeholder="City">
+                              </mat-form-field></td>
+                              <td class="doc-spacing">
+                                  <mat-form-field class="example-full-width">
+                                <input matInput placeholder="State">
+                              </mat-form-field></td>
+                              <td class="doc-spacing">
+                                  <mat-form-field class="example-full-width">
+                                <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="">
+                                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                              </mat-form-field></td>
+                            </tr></table>
+                    </form>
+            </div>
+
+            <table style="empty-cells:hide;" border="1"   cellpadding="1" cellspacing="1" style="margin-top:15px">
+                    <tr>
+                        <th style="width:400px; text-align:center;">CHILD'S MEDICAL HISTROY</th>
+                        <th style="width:100px; text-align:center;">YES</th>
+                        <th style="width:100px; text-align:center;">NO</th>
+                        <th style="width:500px; text-align:center;">If yes, please give details<br></th>
+                    </tr>
+                    
+                    <tr>
+                        <td> Asthma </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Snoring/ Mouth breathing</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>         
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Burning/ Pain on urination </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col">   
+                                            <mat-form-field class="example-full-width comments-spacing">
+                                              <textarea matInput placeholder=""></textarea>
+                                            </mat-form-field>         
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td>Constipation</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col">   
+                                            <mat-form-field class="example-full-width comments-spacing">
+                                              <textarea matInput placeholder=""></textarea>
+                                            </mat-form-field>         
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td>Abdominal Pain</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>    
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Ear Discharge</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>          
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Fits</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>           
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Hearing Difficulty</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>      
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td>Headache</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>           
+                        </td> 
+                    </tr>
+
+                    <tr>
+                            <td>Hearts Problems</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>      
+                        </td>  
+                    </tr>
+
+                    <tr>
+                            <td>Visual Problems</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>     
+                    </tr>
+
+                    <tr>
+                            <td>Kidney Problems</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>   
+                            
+                    </tr>
+
+                    <tr>
+                            <td>Development Delay</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>   
+                            
+                    </tr>
+
+                    <tr>
+                            <td>Learning Difficulty</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>     
+                    </tr>
+
+                    <tr>
+                            <td>Stammering / Speech Problems</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td>      
+                    </tr>
+
+                    <tr>
+                            <td>Behavioural / Mood Concerns </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td> 
+                    </tr>
+
+                    <tr>
+                            <td>Sleep Issues</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">   <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td> 
+                    </tr>
+
+                    <tr>
+                            <td>Eating Issues</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td> 
+                    </tr>
+
+                    <tr>
+                            <td>Diabetes/ Thyroid disorder</td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                            <td class="first-col">   
+                                            <mat-form-field class="example-full-width comments-spacing">
+                                              <textarea matInput placeholder=""></textarea>
+                                            </mat-form-field>        
+                            </td>    
+                    </tr>
+
+                    <tr>
+                              <td>Hospitalisation</td>
+                              <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                              <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                              <td class="first-col">   
+                                              <mat-form-field class="example-full-width comments-spacing">
+                                                <textarea matInput placeholder=""></textarea>
+                                              </mat-form-field>        
+                              </td> 
+                    </tr>
+
+                    <tr>
+                                <td>Surgery</td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                        <td class="first-col">   
+                                        <mat-form-field class="example-full-width comments-spacing">
+                                          <textarea matInput placeholder=""></textarea>
+                                        </mat-form-field>        
+                        </td> 
+                    </tr>
+                       
+                    <tr>
+                                <td>Medications</td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col">   
+                                                <mat-form-field class="example-full-width comments-spacing">
+                                                  <textarea matInput placeholder=""></textarea>
+                                                </mat-form-field>        
+                                </td> 
+                    </tr>
+                    
+                    <tr>
+                                <td>Vaccinated for age</td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col">   
+                                                <mat-form-field class="example-full-width comments-spacing">
+                                                  <textarea matInput placeholder=""></textarea>
+                                                </mat-form-field>        
+                                </td>  
+                    </tr>
+                       
+                    <tr>
+                                <td>Menstrual Problems (girls)</td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col" style="padding-left:40px">  <input type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                                <td class="first-col">   
+                                                <mat-form-field class="example-full-width comments-spacing">
+                                                  <textarea matInput placeholder=""></textarea>
+                                                </mat-form-field>        
+                                </td> 
+                    </tr>
+            </table>
+
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1">
+                <tr>
+                    <td style="width:500px">ANY OTHER MEDICAL ISSUES CONCERNING THE CHILD</td>
+                    <td style="width:600px">FAMILY HISTROY</td>
+                </tr>
+                <tr>
+                    <td style="width:500px"></td>
+                    <td style="width:600px">
+                      <tr> 
+                          <div style="float:left"> 
+                              <div style="float:left; padding:3px">
+                                <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                              </div>
+                              <div style="float:left; padding:3px"><label>Thyroid</label> </div>
+                              <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                      <input matInput>
+                                  </mat-form-field>
+                              </div>
+                            </div> 
+
+                            <div style="float:left">
+                                <div style="float:left; padding:3px">
+                                  <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                                </div>
+                                <div style="float:left; padding:3px"><label>Diabetes</label> </div>
+                                <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                              </div> 
+                      </tr>
+                      <tr> 
+                          <div style="float:left"> 
+                              <div style="float:left; padding:3px">
+                                <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                              </div>
+                              <div style="float:left; padding:3px"><label>Heart Disease</label> </div>
+                              <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                      <input matInput>
+                                  </mat-form-field>
+                              </div>
+                            </div> 
+
+                            <div style="float:left">
+                                <div style="float:left; padding:3px">
+                                  <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                                </div>
+                                <div style="float:left; padding:3px"><label>Hypertension</label> </div>
+                                <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                              </div> 
+                      </tr>
+                      <tr> 
+                          <div style="float:left"> 
+                              <div style="float:left; padding:3px">
+                                <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                              </div>
+                              <div style="float:left; padding:3px"><label>Cancer</label> </div>
+                              <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                      <input matInput>
+                                  </mat-form-field>
+                              </div>
+                            </div> 
+
+                            <div style="float:left">
+                                <div style="float:left; padding:3px">
+                                  <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                                </div>
+                                <div style="float:left; padding:3px"><label>Other</label> </div>
+                                <div style="float:left; margin-top: -10px"> <mat-form-field class="example-full-width">
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                              </div> 
+                      </tr>
+                    </td>
+                </tr>
+            </table>  
+
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px">
+              <div style="padding:10px">
+                <span>
+                    I agree and certify that all the information given in this form is complete and correct. I acknowledge that
+                    it is my responsibility to inform the shine room of any changes in my child's health,
+                    physical condition or medical needs.
+                </span>
+              </div>
+
+              <div style="padding:10px">
+                  <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                  <span>
+                      To attend the scheduled basic health screening. All health data will be kept strictly 
+                      confidential and used only in research for the bettermrnt of student Health.
+                  </span>
+              </div>
+
+              <div style="padding:10px">
+                  <input type="checkbox" name="report_myTextEditBox" value="checked"> 
+                  <span>
+                     To receive care from the shine nurse, including first aid and oral non-prescription medicline at 
+                     the Shine first aid rooms on campus.
+                  </span>
+              </div>
+            </table>
+
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px; margin-top:10px;">
+                <tr>
+                    <th style="width:150px; text-align:center;">AGE</th>
+                    <th style="width:150px; text-align:center;">HEIGHT(cms)</th>
+                    <th style="width:150px; text-align:center;">WEIGHT(kg)</th>
+                    <th style="width:300px; text-align:center;">WAIST CIRCUMFERENCES (cms)<br></th>
+                    <th style="width:150px; text-align:center;">BMI</th>
+                </tr>
+
+                <tr> 
+                  <td> 
+                      <mat-form-field class="example-full-width comments-spacing">
+                          <textarea matInput placeholder=""></textarea>
+                      </mat-form-field> 
+                  </td>
+                  <td> 
+                      <mat-form-field class="example-full-width comments-spacing">
+                          <textarea matInput placeholder=""></textarea>
+                      </mat-form-field> 
+                  </td>
+                  <td> 
+                      <mat-form-field class="example-full-width comments-spacing">
+                          <textarea matInput placeholder=""></textarea>
+                      </mat-form-field> 
+                  </td>
+                  <td> 
+                      <mat-form-field class="example-full-width comments-spacing">
+                          <textarea matInput placeholder=""></textarea>
+                      </mat-form-field> 
+                  </td>
+                  <td> 
+                      <mat-form-field class="example-full-width comments-spacing">
+                          <textarea matInput placeholder=""></textarea>
+                      </mat-form-field> 
+                  </td>
+                </tr>
+            </table>
+
+            <table>
+            <div style="width: 1100px; height: 150px; margin-top:15px; padding:20px;">
+              <tr>
+                <div>
+                  <div style="float:left"> VITAL SIGNS :  </div>
+                  <div class="vital-text-1"> Normal :  </div>
+                  <input class="vital-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                  <div class="vital-text-1"> Abnormal :  </div>
+                  <input class="vital-element-1" type="checkbox" name="report_myTextEditBox" value="checked">
+                  <div class="vital-text-1"> Details :  </div>
+                  <div style="float:left" >
+                    <mat-form-field class="example-full-width" style='margin: -15px 30px;'>
+                        <input matInput placeholder="">
+                      </mat-form-field>
+                  </div>
+                </div>
+              </tr>
+              <tr>
+                
+                <table>
+                  <tr>
+                      <td> PALLOR : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                   
+                      <td style="padding-left: 40px"> LYMPHADENOPATHY : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      
+                      <td style="padding-left: 40px"> DEFOMITY : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                  </tr>
+
+                  <tr>
+                      <td> LCTERUS : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                   
+                      <td style="padding-left: 40px"> CYANOSIS : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      
+                  </tr>
+
+                  <tr>
+                      <td> EDEMA : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                   
+                      <td style="padding-left: 40px"> CLUBBING : </td>
+                      <td> Yes :  </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                      <td> No : </td>
+                      <td><input class="vital-element-2" type="checkbox" name="report_myTextEditBox" value="checked"> </td>
+                  </tr>
+                </table>
+              </tr>
+
+            </div>
+            </table>
+
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px;margin-top:10px;">
+                <tr>
+                    <th style="width:300px; text-align:center;">SYSTEM</th>
+                    <th style="width:250px; text-align:center;">NORMAL</th>
+                    <th style="width:650px; text-align:center;">SPECIFY DETAILS IF ABNORMAL<br></th>
+                </tr>
+
+                <tr> 
+                  <td>EAR</td>
+                  <td></td>
+                  <td class="first-col">   
+                          <mat-form-field class="example-full-width comments-spacing">
+                            <textarea matInput placeholder=""></textarea>
+                          </mat-form-field>        
+                  </td>
+                </tr>
+
+                <tr> 
+                    <td>NOSE</td>
+                    <td></td>
+                    <td class="first-col">   
+                          <mat-form-field class="example-full-width comments-spacing">
+                            <textarea matInput placeholder=""></textarea>
+                          </mat-form-field>        
+                    </td>
+                  </tr>
+
+                  <tr> 
+                      <td>THROAT</td>
+                      <td></td>
+                      <td class="first-col">   
+                              <mat-form-field class="example-full-width comments-spacing">
+                                <textarea matInput placeholder=""></textarea>
+                              </mat-form-field>        
+                      </td>
+                    </tr>
+
+                    <tr> 
+                        <td>RS</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>CVS</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>ABDOMEN</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>CNS</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>SKIN</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>HAIR</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>MUSCULOSKELETAL SYSTEM</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>OTHERS</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td>PSYCHOLOGICAL CONSULATION</td>
+                        <td></td>
+                        <td class="first-col">   
+                                <mat-form-field class="example-full-width comments-spacing">
+                                  <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>        
+                        </td>
+                    </tr>
+
+            </table>
+    </div>
+</div>

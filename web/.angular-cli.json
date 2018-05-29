@@ -1,0 +1,44 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+        "name": "hms"
+    },
+    "apps": [{
+        "root": "src",
+        "outDir": "dist",
+        "assets": [
+            "assets",
+            "favicon.ico"
+        ],
+        "index": "index.html",
+        "main": "main.ts",
+        "polyfills": "polyfills.ts",
+        "test": "test.ts",
+        "tsconfig": "tsconfig.hms.json",
+        "prefix": "hms",
+        "styles": [
+            "styles.css",
+            "../node_modules/material-design-lite/material.min.css",
+            "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css"
+        ],
+        "scripts": [
+            "../node_modules/material-design-lite/material.min.js",
+            "../node_modules/jspdf/dist/jspdf.min.js",
+            "../node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js",
+            "../node_modules/html2canvas/dist/html2canvas.min.js"
+        ],
+        "environmentSource": "environments/environment.ts",
+        "environments": {
+            "dev": "environments/environment.ts",
+            "prod": "environments/environment.prod.ts"
+        }
+    }],
+    "defaults": {
+        "styleExt": "css",
+        "serve": {
+            "host": "0.0.0.0",
+            "port": 4200
+        },
+        "component": {}
+    }
+}

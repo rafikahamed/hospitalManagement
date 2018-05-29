@@ -1,0 +1,19 @@
+{
+  "name": "hms",
+  "version": "1.0.0",
+  "description": "Build the project:     cd src/web && npm install     cd src/server && npm install",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

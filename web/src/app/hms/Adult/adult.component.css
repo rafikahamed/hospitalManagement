@@ -1,0 +1,51 @@
+.side-nav {
+    min-width: 20%;
+  }
+  
+  /* mat-card {
+      min-height: 125px;
+    } */
+  
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  
+  button {
+    background-color: #2979FF;
+    color: white;
+    /* margin: 5%; */
+  }
+  
+  mat-toolbar {
+    background-color: #2979FF;
+    color: white;
+  }
+  
+  mat-expansion-panel-header {
+    padding-left: 15px;
+  }
+  
+  mat-list-item {
+    font-size: 12px;
+  }
+  
+  mat-card-title {
+    font-size: 20px;
+  }
+  
+  i {
+    color: #2979FF
+  }
+  
+  @media screen and (max-width: 640px) {
+    .side-nav {
+      min-width: 100%;
+    }
+  }
