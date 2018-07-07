@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild, OnInit, Injectable } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from 'app/hms/users/user.service';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 import 'rxjs/add/operator/filter';
 
 @Component({

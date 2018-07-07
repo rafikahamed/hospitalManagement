@@ -12,6 +12,7 @@ import {AdultMainComponent} from 'app/hms/Adult/adult.component';
 import { LoginComponent } from 'app/hms/login/login.component';
 
 import { UserService } from 'app/hms/users/user.service';
+import { AdultService } from './users/adult.service';
 
 @NgModule({
   imports: [
@@ -43,7 +44,8 @@ import { UserService } from 'app/hms/users/user.service';
   ],
   providers: [
     { provide: 'Window', useValue: window },
-    UserService
+    UserService,
+    AdultService
   ],
   bootstrap: [
     HmsComponent

@@ -3,9 +3,11 @@
   }
   
   .form-field{
-    width: 1400px;
+    width: 1500px;
+    height: 300px;
     border: 1px solid#ccc;
-    margin: 40px 20px 20px 40px;
+    margin: 40px 14px 20px 70px;
+    padding: 10px;
   }
 
   .form-layout{
@@ -91,4 +93,14 @@
     content: "\25b2";
     padding-left: 0.5em;
   }
+
+  .apollo-logo{
+    background-image: url(../../assets/img/apollo-logo.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    width: 60px;
+    height: 60px;
+    float: right;
+  }
+
   

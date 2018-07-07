@@ -12,8 +12,7 @@ export class UserService {
   constructor(private http: HttpClient, private router: Router) {
 
   }
-
-
+  
   authenticate(user_name, password, staff: boolean, callback): any {
     console.log("Inside the services"+"------>"+user_name+" ------>"+password+" ---->"+staff)
     if( user_name == "rafik" && password == "ahamed"){

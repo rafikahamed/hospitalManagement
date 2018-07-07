@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<h5 class="form-heading">PEDIATRIC FORM :</h5>
 <div class="container-fluid form-field">
-    <div class="container-fluid spacing">
+    <div class="apollo-logo"> </div>
+      <div class="container-fluid spacing">
+            
             <div>
                 <form class="example-form">
                         <table class="example-full-width" cellspacing="100">
@@ -24,7 +27,7 @@
                     <h5>STUDENT'S PERSONAL INFORMATION (To be filled in by patterns) </h5>
 
                     <form class="example-form">
-                            <table class="example-full-width" cellspacing="100"><tr>
+                            <table class="example-full-width" cellspacing="100" ><tr>
                               <td class="doc-spacing">
                               <mat-form-field class="example-full-width-school">
                                 <input matInput placeholder="Name of School">
@@ -106,7 +109,7 @@
             </div>
 
             <table style="empty-cells:hide;" border="1"   cellpadding="1" cellspacing="1" style="margin-top:15px">
-                    <tr>
+                    <tr style="background: #ccc;">
                         <th style="width:400px; text-align:center;">CHILD'S MEDICAL HISTROY</th>
                         <th style="width:100px; text-align:center;">YES</th>
                         <th style="width:100px; text-align:center;">NO</th>
@@ -526,16 +529,16 @@
             </table>
 
             <table>
-            <div style="width: 1100px; height: 150px; margin-top:15px; padding:20px;">
+            <div class="vital-sign">
               <tr>
                 <div>
                   <div style="float:left"> VITAL SIGNS :  </div>
                   <div class="vital-text-1"> Normal :  </div>
                   <input class="vital-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
-                  <div class="vital-text-1"> Abnormal :  </div>
+                  <div class="vital-text-1" style="margin-left:45px"> Abnormal :  </div>
                   <input class="vital-element-1" type="checkbox" name="report_myTextEditBox" value="checked">
-                  <div class="vital-text-1"> Details :  </div>
-                  <div style="float:left" >
+                  <div class="vital-text-1" style="margin-left:100px"> Details :  </div>
+                  <div style="float:left; margin-left: -25px;" >
                     <mat-form-field class="example-full-width" style='margin: -15px 30px;'>
                         <input matInput placeholder="">
                       </mat-form-field>
@@ -543,7 +546,6 @@
                 </div>
               </tr>
               <tr>
-                
                 <table>
                   <tr>
                       <td> PALLOR : </td>
@@ -599,8 +601,8 @@
             </div>
             </table>
 
-            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px;margin-top:10px;">
-                <tr>
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px;">
+                <tr style="background: #ccc;">
                     <th style="width:300px; text-align:center;">SYSTEM</th>
                     <th style="width:250px; text-align:center;">NORMAL</th>
                     <th style="width:650px; text-align:center;">SPECIFY DETAILS IF ABNORMAL<br></th>
@@ -727,5 +729,103 @@
                     </tr>
 
             </table>
-    </div>
+
+            <div class="vision-block">
+              <div class="vision-heading">VISION</div>
+                <div class="left" style="margin-bottom: 10px;">
+                    <div class="left"> Unaided</div>
+                    <div class="left">
+                      <input class="vision-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                    </div>
+                    <div class="slash"> / </div>
+                    <div class="left"> Aided - Glass</div>
+                    <div class="left">
+                      <input class="vision-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                    </div>
+                    <div class="left" style="margin-left:10px"> Lens</div>
+                    <div class="left">
+                      <input class="vision-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                    </div>
+                    <div class="slash"> / </div>
+                    <div class="left"> Not brought glass</div>
+                    <div class="left">
+                      <input class="vision-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                    </div>
+                    <div class="slash"> / </div>
+                    <div class="left"> couldn't be Assigned</div>
+                    <div class="left">
+                      <input class="vision-element-1" type="checkbox" name="report_myTextEditBox" value="checked"> 
+                    </div>
+            </div>
+
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px; margin-top:10px;">
+                <tr>
+                        <th style="width:500px; text-align:center;">RIGHT EYE</th>
+                        <th style="width:500px; text-align:center;">LEFT EYE</th>
+                </tr>
+                <tr>
+                      <td>
+                        <div style="float:left; padding: 5px"> DISTANT V/A </div>
+                        <div style="float:left; margin-left: 100px; margin-top: 5px;"> 6 / </div>
+                        <div class="vision-textField"> 
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                      </td>
+                      <td>
+                          <div style="float:left; margin-left: 100px; margin-top: 5px;"> 6 / </div>
+                          <div class="vision-textField"> 
+                              <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="">
+                              </mat-form-field>
+                          </div>
+                      </td>
+                </tr>
+            </table>  
+            
+            <table style="empty-cells:hide;" border="1"cellpadding="1" cellspacing="1" style="width:1099px; margin-top:10px;">
+              <tr> 
+                <td width="200px"> DENTAL </td>
+                <td width="300px"> 
+                    <div class="dental-blk-one"> NORMAL </div>
+                    <div class="dental-blk-two"> 
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="">
+                        </mat-form-field>
+                    </div>
+                </td>
+                <td width="300px"> 
+                    <div class="dental-blk-one"> ABNORMALITY </div>
+                    <div class="dental-blk-two"> 
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="">
+                        </mat-form-field>
+                    </div>
+                </td>
+                <td width="300px"> 
+                    <div class="dental-blk-one"> ADVICE </div>
+                    <div class="dental-blk-two"> 
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="">
+                        </mat-form-field>
+                    </div>
+                </td>
+              </tr>
+            </table>
+
+            <div class="doc-sign"> 
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="">
+                </mat-form-field>
+                <div> Doctor's name & Signature</div>
+            </div>
+
+         </div>
+         <div class="pediatric-submit"> 
+            <button type="button" class="btn btn-success">Submit</button>
+         </div>
+        
+
+      </div>
 </div>
